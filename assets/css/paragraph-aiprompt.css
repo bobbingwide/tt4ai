@@ -1,0 +1,19 @@
+/**
+ paragraph and/or group? aiprompt and airesponse styling
+ */
+
+.is-style-aiprompt {
+    border: 1px solid #a1a1a1;
+    border-radius: 16px;
+    font-family: var( --wp--preset--font-family--system-serif );
+    background-color: var( --wp--preset--color--base-2);
+    padding: var( --wp--preset--spacing--10 );
+}
+
+.is-style-airesponse {
+    border-radius: 2px;
+    background-color: var( --wp--preset--color--base-2);
+    border: 2px solid grey;
+    font-family: var( --wp--preset--font-family--system-serif );
+    padding: var( --wp--preset--spacing--10 );
+}
