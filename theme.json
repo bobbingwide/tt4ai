@@ -178,6 +178,11 @@
             },
             "spacingSizes": [
                 {
+                    "name": "0",
+                    "size": "0rem",
+                    "slug": "0"
+                },
+                {
                     "name": "1",
                     "size": "1rem",
                     "slug": "10"
@@ -370,7 +375,7 @@
             "core/code": {
                 "border": {
                     "color": "var(--wp--preset--color--contrast)",
-                    "radius": "var(--wp--preset--spacing--20)"
+                    "radius": "var(--wp--preset--spacing--0)"
                 },
                 "color": {
                     "background": "var(--wp--preset--color--base-2)",
@@ -531,11 +536,32 @@
                     }
                 }
             },
+            "core/paragraph": {
+                "variations": {
+                    "aiprompt": {
+                        "border": {
+                            "width": "2px"
+                        },
+                        "typography": {
+                            "fontFamily": "var(--wp--preset--font-family--system--serif)",
+                            "fontStyle": "normal",
+                            "fontSize": "var(--wp--preset--font-size--medium)",
+                            "lineHeight": "1.5"
+                        }
+
+                    },
+                    "airesponse": {
+                        "border": {
+                            "width": "5px"
+                        }
+                    }
+                }
+            },
             "core/image": {
                 "variations": {
-                    "rounded": {
+                    "plain": {
                         "border": {
-                            "radius": "var(--wp--preset--spacing--20)"
+                            "radius": "var(--wp--preset--spacing--0)"
                         }
                     }
                 }
@@ -619,7 +645,7 @@
             },
             "core/post-featured-image": {
                 "border": {
-                    "radius": "var(--wp--preset--spacing--20)"
+                    "radius": "var(--wp--preset--spacing--0)"
                 }
             },
             "core/post-terms": {

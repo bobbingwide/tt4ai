@@ -1,7 +1,7 @@
-=== 2024ai ===
+=== tt4ai ===
 Contributors: bobbingwide
-Requires at least: 5.9
-Tested up to: 5.9
+Requires at least: 6.4.2
+Tested up to: 6.4.2
 Version: 0.0.0
 Tags: full-site-editing
 License: GPL-2.0+
@@ -16,7 +16,7 @@ Child theme of Twenty Twenty-Four with theme.json from Twenty Twenty-Four
 
 == Licence ==
 
-2024ai is distributed under the terms of the GNU GPL.
+tt4ai is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
