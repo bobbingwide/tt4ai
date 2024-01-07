@@ -1,5 +1,6 @@
 <?php
 /**
+ * @copyright (C) Copyright Bobbing Wide 2023-2024
  * tt4ai functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
@@ -115,5 +116,27 @@ if ( ! function_exists( 'tt4ai_block_stylesheets' ) ) :
 endif;
 
 add_action( 'init', 'tt4ai_block_stylesheets' );
+
+/**
+ * Expand shortcodes in the Query loop.
+ */
+/**
+ * Filters the rendered shortcode block.
+ *
+ * @param $content
+ * @param $parsed_block
+ * @param $block
+ * @return mixed|string
+ */
+function tt4ai_render_block_core_shortcode( $content, $parsed_block, $block ) {
+	//echo $content;
+	bw_trace2();
+	$content = do_shortcode( $content );
+
+	return $content;
+}
+add_filter( 'render_block_core/shortcode', 'tt4ai_render_block_core_shortcode', 10, 3, );
+add_filter( 'render_block_core/paragraph', 'tt4ai_render_block_core_shortcode', 10, 3, );
+
 
 
