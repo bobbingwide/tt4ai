@@ -11,6 +11,9 @@
 Child theme of Twenty Twenty-Four with theme.json from Twenty Twenty-Four
 
 ## Change Log 
+# 0.1.0 
+* Added: Home template. posts part #2
+
 # 0.0.1 
 * Added: Add aiprompt and airesponse styles #1
 

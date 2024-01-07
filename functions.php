@@ -106,9 +106,9 @@ if ( ! function_exists( 'tt4ai_block_stylesheets' ) ) :
 			'core/paragraph',
 			array(
 				'handle' => 'tt4ai-paragraph-style-aiprompt',
-				'src'    => get_theme_file_uri( 'assets/css/paragraph-aiprompt.css' ),
+				'src'    => get_theme_file_uri( 'css/paragraph-aiprompt.css' ),
 				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
-				'path'   => get_theme_file_path( 'assets/css/paragraph-aiprompt.css' ),
+				'path'   => get_theme_file_path( 'css/paragraph-aiprompt.css' ),
 			)
 		);
 	}
