@@ -2,7 +2,7 @@
 Contributors: bobbingwide
 Requires at least: 6.4.2
 Tested up to: 6.4.2
-Version: 0.0.1
+Version: 0.2.0
 Tags: full-site-editing
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,8 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Child theme of Twenty Twenty-Four with theme.json from Twenty Twenty-Four
 
 == Change Log ==
+= 0.2.0 =
+* Changed: Add logic to override post-template block to order by menu_order or rand #6 
+
+= 0.1.1 = 
+* Changed: Implement filters to enable shortcode expansion for patterns within Post Template blocks #3 
+
 = 0.1.0 = 
-* Added: Home template. posts part #2
+* Added: Home template, posts part, plugins-by-title part #2
+* Fixed: Move css from assets, which doesn't get zipped #1
 
 = 0.0.1 = 
 * Added: Add aiprompt and airesponse styles #1

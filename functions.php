@@ -138,5 +138,5 @@ function tt4ai_render_block_core_shortcode( $content, $parsed_block, $block ) {
 add_filter( 'render_block_core/shortcode', 'tt4ai_render_block_core_shortcode', 10, 3, );
 add_filter( 'render_block_core/paragraph', 'tt4ai_render_block_core_shortcode', 10, 3, );
 
-
+require_once __DIR__ . '/includes/block-overrides.php';
 
