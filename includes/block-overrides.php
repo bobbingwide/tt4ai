@@ -15,6 +15,7 @@ require_once __DIR__ . '/block-override-functions.php';
  * or find another way to automatically determine whether to include the file.
  */
 require_once __DIR__ . '/post-template.php';
+require_once __DIR__ . '/post-featured-image.php';
 
 /**
  * Hook into register_block_types_args before WP_Block_Supports
@@ -29,5 +30,6 @@ add_filter( 'register_block_type_args', 'tt4ai_register_block_type_args', 9 );
  */
 function tt4ai_register_block_type_args( $args ) {
 	$args = tt4ai_maybe_override_block( $args, 'core/post-template', 'render_block_core_post_template');
+	$args = tt4ai_maybe_override_block( $args, 'core/post-featured-image', 'render_block_core_post_featured_image');
 	return $args;
 }

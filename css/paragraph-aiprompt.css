@@ -17,3 +17,35 @@
     font-family: var( --wp--preset--font-family--system-serif );
     padding: var( --wp--preset--spacing--10 );
 }
+
+
+figure.wp-block-post-featured-image {
+    position: relative;
+    display: inline-block;
+}
+figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+figure:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+}
+figcaption div { padding: 10px; width: 80%; margin: 10px auto; }
+figcaption div.post_title { font-weight: bold;
+    font-size: var( --wp--preset--font-size--large )
+}
+figcaption div.post_excerpt { border: 1px solid #a1a1a1;
+    background-color: #0e0e0e;
+    border-radius: 16px;
+    font-family: var( --wp--preset--font-family--system-serif );
+}
