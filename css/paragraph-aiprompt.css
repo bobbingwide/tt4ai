@@ -47,6 +47,7 @@ figcaption div.post_excerpt { border: 1px solid #a1a1a1;
     border-radius: 16px;
     font-family: var( --wp--preset--font-family--system-serif );
 }
-figcaption div.post_content {
+figcaption div.post_content,
+figcaption div.dimensions {
     font-size: var( --wp--preset--font-size--small );
 }
