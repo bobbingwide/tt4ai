@@ -2,7 +2,7 @@
 Contributors: bobbingwide
 Requires at least: 6.4.2
 Tested up to: 6.4.2
-Version: 0.3.1
+Version: 0.4.0
 Tags: full-site-editing
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,6 +11,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Child theme of Twenty Twenty-Four with theme.json from Twenty Twenty-Four
 
 == Change Log ==
+= 0.4.0 =
+Changed: Improve captions for featured images #8. 
+Changed: Show word count for Excerpts #4. 
+Changed: Show character count for meta description #4. 
+Changed: Add Revised prompt style #1.
+Added: screenshot 
+
 = 0.3.1 = 
 * Changed: Enable featured image link. Show dimensions if not 772 x 250 #8
 * Fixed: Remove styling for figure.wp-block-post-featured-image #8
