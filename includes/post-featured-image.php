@@ -45,7 +45,9 @@ function tt4ai_get_caption( $post ) {
 	if (strlen( trim( $post->post_excerpt ) ) ){
 		$figcaption.=tt4ai_div( 'post_excerpt', $post->post_excerpt );
 	}
-	$figcaption .= tt4ai_div( 'post_content', $post->post_content );
+	if (strlen( trim( $post->post_content ) ) ) {
+		$figcaption.=tt4ai_div( 'post_content', $post->post_content );
+	}
 	//$figcaption .= tt4ai_div( 'alttext',
 	// Get dimensions
 	$figcaption .= tt4ai_get_dimensions( $post->ID );

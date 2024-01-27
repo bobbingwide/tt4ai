@@ -55,6 +55,13 @@
 			)
 		);
 		register_block_style(
+			'core/paragraph',
+			array(
+				'name'        =>'revisedprompt',
+				'label'       =>__( 'Revised prompt', 'tt4ai' ),
+			)
+		);
+		register_block_style(
 			'core/group',
 			array(
 				'name'        =>'aiprompt',
@@ -137,8 +144,13 @@ function tt4ai_render_block_core_shortcode( $content, $parsed_block, $block ) {
 }
 add_filter( 'render_block_core/shortcode', 'tt4ai_render_block_core_shortcode', 10, 3, );
 add_filter( 'render_block_core/paragraph', 'tt4ai_render_block_core_shortcode', 10, 3, );
+add_filter( 'render_block_core/post-excerpt', 'tt4ai_render_block_core_post_excerpt', 10, 3 );
+add_filter( 'get_the_excerpt', 'tt4ai_get_the_excerpt', 999, 2);
+remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
+
 remove_action( 'embed_head', 'wp_print_styles', 20 );
 
 
 require_once __DIR__ . '/includes/block-overrides.php';
+require_once __DIR__ . '/includes/oik-fields-custom-formatting.php';
 
